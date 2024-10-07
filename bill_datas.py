@@ -1,4 +1,4 @@
-def invoice_data(results, bill_data):
+def invoice_data(results, bill_data): //bill data for invoices
     for idx, invoice in enumerate(bill_data.documents):
         invoice_data = {}
         vendor_name = invoice.fields.get("VendorName")
