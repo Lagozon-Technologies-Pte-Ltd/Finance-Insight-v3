@@ -28,7 +28,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/upload', methods=['POST'])
-def upload_file():
+def upload_file(): #file uploadation
     service = request.form.get('service-select')
     input_method = request.form.get('input-method')
     if service == 'Invoices':
